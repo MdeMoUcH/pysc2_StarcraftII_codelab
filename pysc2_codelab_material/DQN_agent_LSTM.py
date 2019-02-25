@@ -71,7 +71,7 @@ _WINDOW_LENGTH = 1
 
 # Load and save weights for training
 
-LOAD_MODEL = True  # True if the training process is already created
+LOAD_MODEL = False  # True if the training process is already created
 SAVE_MODEL = True
 
 # Configure Flags for executing model from console:
@@ -203,7 +203,7 @@ def training_game():
     nb_actions = 12  # Number of actions
 
     model = neural_network_model(input_shape, nb_actions)
-    memory = SequentialMemory(limit=5000, window_length=_WINDOW_LENGTH)
+    memory = SequentialMemory(limit=3500, window_length=_WINDOW_LENGTH)
 
     processor = SC2Proc()
 

@@ -1,6 +1,8 @@
 #!/bin/bash
 
 pip3 install --upgrade pip
+pip3 install --upgrade pip --user
+pip3 install --upgrade setuptools --user
 pip3 install --upgrade PySC2==2.0 --user
 pip3 install --upgrade keras==2.2.2 keras-applications==1.0.4 keras-preprocessing==1.0.2 numpy==1.14.0 --user
 pip3 install --upgrade keras-rl==0.4.0 --user

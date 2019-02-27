@@ -1,9 +1,7 @@
 #!/bin/bash
 
 #Instalamos Cuda
-#sudo apt-get install nvidia-cuda-toolkit
-
-#wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda_10.0.130_410.48_linux
-#chmod 777 cuda_10.0.130_410.48_linux
-#sudo ./cuda_10.0.130_410.48_linux
-#rm cuda_10.0.130_410.48_linux
+sudo dpkg -i cuda-repo-ubuntu1804-10-1-local-10.1.105-418.39_1.0-1_amd64.deb
+sudo apt-key add /var/cuda-repo-10-1-local-10.1.105-418.39/7fa2af80.pub
+sudo apt-get update
+sudo apt-get install cuda

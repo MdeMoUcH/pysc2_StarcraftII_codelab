@@ -11,5 +11,8 @@ echo "================================="
 pip3 show keras-rl
 echo "================================="
 pip3 show numpy
+echo "================================="
+pip3 show tensorflow
+pip3 show tensorflow-gpu
 
 
